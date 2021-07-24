@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Bag</title>
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="smartbag.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-light bg-white border-bottom"> <a class="navbar-brand ml-2 font-weight-bold" href="#"><span id="burgundy"></span><span style="color:black;font-weight: bold;
+;font-size: 25px;"><i>My Smart Bag</i></span></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor" aria-controls="navbarColor" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+    <div class="collapse navbar-collapse" id="navbarColor">
+        <ul class="navbar-nav">
+            <li class="nav-item rounded bg-light search-nav-item"><input type="text" id="search" class="bg-light"placeholder="Search"><span class="fa fa-search text-muted"></span></li>
+            <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-user-o"></span><span class="text">Login</span></a> </li>
+            <li class="nav-item "><a class="nav-link" href="#"><span class="fa fa-shopping-cart"></span><span class="text">Cart</span></a> </li>
+        </ul>
+    </div>
+</nav>
+<div class="filter"> <button class="btn btn-default" type="button" data-toggle="collapse" data-target="#mobile-filter" aria-expanded="true" aria-controls="mobile-filter">Filters<span class="fa fa-filter pl-1"></span></button>
+</div>
+<div id="mobile-filter">
+    <div class="border-bottom pb-2 ml-2">
+        <h4><i>Filters</i></h4>
+    </div>
+    <div class="py-2 border-bottom ml-3">
+        <h6 class="font-weight-bold">Categories</h6>
+        <div id="orange"><span class="fa fa-minus"></span></div>
+        <form>
+            <div class="form-group"> <input type="checkbox" id="artisan"> <label for="artisan">Fresh Artisan Breads</label> </div>
+            <div class="form-group"> <input type="checkbox" id="breakfast"> <label for="breakfast">Breakfast Breads</label> </div>
+            <div class="form-group"> <input type="checkbox" id="healthy"> <label for="healthy">Healthy Breads</label> </div>
+        </form>
+    </div>
+    <div class="py-2 border-bottom ml-3">
+        <h6 class="font-weight-bold">Accompainments</h6>
+        <div id="orange"><span class="fa fa-minus"></span></div>
+        <form>
+            <div class="form-group"> <input type="checkbox" id="tea"> <label for="tea">Tea Cakes</label> </div>
+            <div class="form-group"> <input type="checkbox" id="cookies"> <label for="cookies">Cookies</label> </div>
+            <div class="form-group"> <input type="checkbox" id="pastries"> <label for="pastries">Pastries</label> </div>
+            <div class="form-group"> <input type="checkbox" id="dough"> <label for="dough">Cookie Dough</label> </div>
+            <div class="form-group"> <input type="checkbox" id="choco"> <label for="choco">Chocolates</label> </div>
+        </form>
+    </div>
+    <div class="py-2 ml-3">
+        <h6 class="font-weight-bold">Top Offers</h6>
+        <div id="orange"><span class="fa fa-minus"></span></div>
+        <form>
+            <div class="form-group"> <input type="checkbox" id="25off"> <label for="25">25% off</label> </div>
+            <div class="form-group"> <input type="checkbox" id="5off"> <label for="5off" id="off">5% off on artisan breads</label> </div>
+        </form>
+    </div>
+</div>
+<!-- Sidebar filter section -->
+<section style="border:0.5px solid black;margin-top: 2%;border-radius: 20px;box-shadow:0px 0px 5px 0px; border-color:orange;" id="sidebar">
+    <div class="border-bottom pb-2 ml-2">
+        <h4 id="burgundy">Filters</h4>
+    </div>
+    <div class="py-2 border-bottom ml-3">
+        <h6 class="font-weight-bold" style="margin-bottom: 2%;"><i style="font-size:20px;">Categories</i></h6>
+        <div id="orange"><span class="fa fa-minus"></span></div>
+        <form>
+            <div class="form-group"> <input type="checkbox" id="artisan"> <label for="artisan">Discount</label> </div>
+            <div class="form-group"> <input type="checkbox" id="breakfast"> <label for="breakfast">Rating</label> </div>
+            <div class="form-group"> <input type="checkbox" id="healthy"> <label for="healthy">Flipkart Super Coins</label> </div>
+             <div class="form-group"> <input type="checkbox" id="healthy"> <label for="healthy">Free Delivery</label> </div>
+              <div class="form-group"> <input type="checkbox" id="healthy"> <label for="healthy">Flipkart Assured</label> </div>
+              <div class="form-group"> <input type="checkbox" id="healthy"> <label for="healthy">Deal Of The Day</label> </div>
+        </form>
+    </div>
+    <div class="py-2 border-bottom ml-3">
+        <h6 class="font-weight-bold" style="margin-bottom: 2%; font-size: 20px;"><i>Special Feature</i></h6>
+       <div class="share">
+        <button class="btn btn-primary" style="border-radius:20px;border:none;">
+        <img style="height: 20px;"src="assets/images/share.png"><span style="color:black;"> Share Smart Bag</span>
+    </button>
+       </div>
+
+    </div>
+    <div class="py-2 ml-3">
+        <h6 class="font-weight-bold"><i style="font-size: 20px;">Savings</i></h6>
+        <div style="margin-top: 2%;font-weight: 600;">
+            You saved $50.
+        </div>
+        <div id="orange"><span class="fa fa-minus"></span></div>
+    </div>
+</section>
+<!-- products section -->
+<section style="border:1px solid black;border-radius: 20px;width: 69%;margin-top: 2%;box-shadow:0px 0px 5px 0px;border-color: orange;" id="products">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                <div class="card"style="height:100%;"> <img class="card-img-top" src="https://rukminim1.flixcart.com/image/280/280/kqidx8w0/edible-oil/y/y/r/kachi-ghani-pouch-mustard-oil-fortune-original-imag4gb3y5auktfg.jpeg?q=70">
+                    <div class="card-body">
+                        <h5><b>Fortune Mustard Oil</b> </h5>
+                        <span>1L</span>
+                        <div style="margin-bottom: 2%;background-color: green;color:white;width:50px;border-radius: 5px;padding-left: 2%;">4.5 &#9733;</div>
+                        <div style="color:green;"><b style="color:black;margin-right:3%;">&#8377;192</b> 10% off</div>
+                       <span style="color:blue;"><img style="width:25px;height:25px;margin-top: 2%;"src="assets/images/dollar.png">      Earn 10 Flipkart Supercoins</span>
+                        <div class="d-flex flex-row my-2">
+                        </div> <button class="btn w-100 rounded my-2">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                <div class="card"style="height:100%;"> <img class="card-img-top" src="https://rukminim1.flixcart.com/image/280/280/jylvde80/edible-oil/6/3/a/1-refined-pouch-sunflower-oil-dhara-original-imafgqqjujj3bztw.jpeg?q=70">
+                    <div class="card-body">
+                        <h5><b>Dhara Refined Oil</b> </h5>
+                        <span>1L</span>
+                        <div style="margin-bottom: 2%; background-color: green;color:white;width:50px;border-radius: 5px;padding-left: 2%;">4.5 &#9733;</div>
+                        <div style="color:green;"><b style="color:black;margin-right:3%;">&#8377;182</b> 5% off</div>
+                        <span style="color:blue;"><img style="width:25px;height:25px;margin-top: 2%;"src="assets/images/dollar.png">      Earn 10 Flipkart Supercoins</span>
+                        <div class="d-flex flex-row my-2">
+                        </div> <button class="btn w-100 rounded my-2">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                <div class="card"style="height:100%;"> <img class="card-img-top" src="https://www.tatasalt.com/public/front_assets/images/tatasalt_og.jpg">
+                    <div class="card-body">
+                        <h5><b>Tata Salt</b> </h5>
+                        <span>500g</span>
+                        <div style="margin-bottom: 2%;background-color: green;color:white;width:50px;border-radius: 5px;padding-left: 2%;">4.5 &#9733;</div>
+                        <div style="color:green;"><b style="color:black;margin-right:3%;">&#8377;40</b> 11% off</div>
+                        <span style="color:blue;"><img style="width:25px;height:25px;margin-top: 2%;"src="assets/images/dollar.png">      Earn 10 Flipkart Supercoins</span>
+                        <div class="d-flex flex-row my-2">
+                        </div> <button class="btn w-100 rounded my-2">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                <div class="card"style="height:100%;"> <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/71P9ObQl3TL._SL1500_.jpg">
+                    <div class="card-body">
+                        <h5><b>Cadbury Gems</b> </h5>
+                        <span>1 Pack</span>
+                        <div style="margin-bottom: 2%;background-color: green;color:white;width:50px;border-radius: 5px;padding-left: 2%;">4.5 &#9733;</div>
+                        <div style="color:green;"><b style="color:black;margin-right:3%;">&#8377;10</b> 5% off</div>
+                        <span style="color:blue;"><img style="width:25px;height:25px;margin-top: 2%;"src="assets/images/dollar.png">      Earn 10 Flipkart Supercoins</span>
+                        <div class="d-flex flex-row my-2">
+                        </div> <button class="btn w-100 rounded my-2">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                <div class="card"style="height:100%;"> <img class="card-img-top" src="https://5.imimg.com/data5/OB/FL/MY-13920102/kissan-fresh-tomato-ketchup-1kg-bottle-500x500.jpg">
+                    <div class="card-body">
+                        <h5><b>Kisaan Fresh Tomato Ketchup</b> </h5>
+                        <span>1L</span>
+                        <div style="margin-bottom: 2%;background-color: green;color:white;width:50px;border-radius: 5px;padding-left: 2%;">4.5 &#9733;</div>
+                        <div style="color:green;"><b style="color:black;margin-right:3%;">&#8377;90</b> 15% off</div>
+                        <span style="color:blue;"><img style="width:25px;height:25px;margin-top: 2%;"src="assets/images/dollar.png">      Earn 10 Flipkart Supercoins</span>
+                        <div class="d-flex flex-row my-2">
+            
+                        </div> <button class="btn w-100 rounded my-2">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                <div class="card d-relative"style="height:100%;"> <img class="card-img-top" src="https://rukminim1.flixcart.com/image/280/280/jsaocy80/snack-savourie/u/h/q/1-aloo-bhujia-pouch-bikano-original-imafdwf3qz6wgvz7.jpeg?q=70">
+                    <div class="card-body">
+                        <h5><b>Bikano Aloo Bhujia</b></h5>
+                        <span>500g</span>
+                        <div style="margin-bottom: 2%;background-color: green;color:white;width:50px;border-radius: 5px;padding-left: 2%;">4.5 &#9733;</div>
+                        <div style="color:green;"><b style="color:black;margin-right:3%;">&#8377;55</b> 3% off</div>
+                        <span style="color:blue;"><img style="width:25px;height:25px;margin-top: 2%;"src="assets/images/dollar.png">      Earn 10 Flipkart Supercoins</span>
+                        </div> <button class="btn w-100 rounded my-2">Add to cart</button>
+                    </div>
+                </div>
+                 <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                <div class="card"style="height:100%;"> <img class="card-img-top" src="https://www.jiomart.com/images/product/420x420/490007701/britannia-nutrichoice-hi-fibre-digestive-biscuits-100-g-0-20201126.jpg">
+                    <div class="card-body">
+                        <h5><b>Nutri Choice Biscuit</b> </h5>
+                        <span>1 Pack</span>
+                        <div style="margin-bottom: 2%;background-color: green;color:white;width:50px;border-radius: 5px;padding-left: 2%;">4.5 &#9733;</div>
+                        <div style="color:green;"><b style="color:black;margin-right:3%;">&#8377;20</b> 1% off</div>
+                        <span style="color:blue;"><img style="width:25px;height:25px;margin-top: 2%;"src="assets/images/dollar.png">      Earn 10 Flipkart Supercoins</span>
+                        <div class="d-flex flex-row my-2">
+                        </div> <button class="btn w-100 rounded my-2">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                <div class="card"style="height:100%;"> <img class="card-img-top" src="https://www.jiomart.com/images/product/420x420/590003662/green-capsicum-500-g-0-20201118.jpg">
+                    <div class="card-body">
+                        <h5><b>Capsicum</b> </h5>
+                        <span>500g</span>
+                        <div style="margin-bottom: 2%;background-color: green;color:white;width:50px;border-radius: 5px;padding-left: 2%;">4.5 &#9733;</div>
+                        <div style="color:green;"><b style="color:black;margin-right:3%;">&#8377;30</b> 9% off</div>
+                        <span style="color:blue;"><img style="width:25px;height:25px;margin-top: 2%;"src="assets/images/dollar.png">      Earn 10 Flipkart Supercoins</span>
+                        <div class="d-flex flex-row my-2">
+                        </div> <button class="btn w-100 rounded my-2">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+             <div class="col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1">
+                <div class="card"style="height:100%;"> <img class="card-img-top" src="https://cdn.mos.cms.futurecdn.net/42E9as7NaTaAi4A6JcuFwG-1200-80.jpg">
+                    <div class="card-body">
+                        <h5><b>Bananas</b> </h5>
+                        <span>1 Dozen</span>
+                        <div style="margin-bottom: 2%;background-color: green;color:white;width:50px;border-radius: 5px;padding-left: 2%;">4.5 &#9733;</div>
+                        <div style="color:green;"><b style="color:black;margin-right:3%;">&#8377;40</b> 2% off</div>
+                        <span style="color:blue;"><img style="width:25px;height:25px;margin-top: 2%;"src="assets/images/dollar.png">      Earn 10 Flipkart Supercoins</span>j
+                        <div class="d-flex flex-row my-2">
+                        </div> <button class="btn w-100 rounded my-2">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
